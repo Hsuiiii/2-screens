@@ -1,0 +1,121 @@
+@media (max-width: 600px) {
+    body{
+        font-size:33px;
+        background-color: rgb(214, 168, 212);
+        color:rgb(255, 253, 220);
+        margin: 10%;
+        line-height: 3em;
+       
+    }
+  
+    p.information{
+      
+      font-size: 18px;
+      line-height: 30px;
+    }
+    img{
+      margin-top: 25%;
+      margin-left: 25%;
+    }
+    
+    .quote{
+        text-align: center;
+    }
+    
+    .author{
+        text-align: center;
+        font-size: 23px;
+        margin-top: 10%;
+    }
+    span{
+        font-size: 60px;
+    }
+}
+@media(min-width: 600px) {
+    body{
+        font-size:30px;
+        height: 100%;
+        background-color:rgb(151, 150, 142);
+        margin: 10%;
+    }
+
+    p.information{
+      color: #000000;
+      font-size: 15px;
+      padding: 3%;
+    }
+    
+    p.quote{
+        display: inline;
+        text-align: left;
+        animation-name: example;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 200px;
+      height: 347px;
+      margin-left: 6%;
+      margin-top: 5%;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-color: rgb(255, 255, 255);
+      color: black;
+    }
+    
+    .flip-card-back {
+      background-color: #ffffff;
+      color: rgb(156, 101, 101);
+      transform: rotateY(180deg);
+    }
+    @keyframes example {
+        0%   {color: rgb(255, 180, 180);}
+        25%  {color: rgb(255, 232, 157);}
+        50%  {color: rgb(145, 190, 248);}
+        75% {color: rgb(114, 243, 200);}
+        100%   {color: rgb(255, 180, 180);}
+      }
+    
+
+    .author{
+        text-align: right;
+        font-size: 20px;
+        animation-name: example;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: rgb(151, 150, 142);
+      padding: 10px;
+    }
+
+}
